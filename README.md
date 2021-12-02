@@ -7,19 +7,20 @@
 * Bored React is a project created in order to have a better understanding of using the axios library to request API data and create a project that uses the useEffect hook.
 
 
+
 # Technologies Used
 * JavaScript
 * CSS3
 * HTML5
 * Netlify
 * React Bootstrap
-* Bored APII
+* Bored API
 
 # Getting Started 
 
 [Click to view page](bored-react.netlify.app)
 
 * User lands on the page, and a spinner will display as the data is being fetched.
-* Users can select from three different types of activities. 
+* Users can select from three different types of activities and a suggestion will render.
 
 
