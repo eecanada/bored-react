@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Spinner } from 'react-bootstrap';
+import { Spinner, Button } from 'react-bootstrap';
 
 function App() {
   const [type, setType] = useState('education');
@@ -20,11 +19,36 @@ function App() {
   }, [type]);
 
   return (
-    <div>
-      <button onClick={() => setType('education')}>Education</button>
-      <button onClick={() => setType('music')}>Music</button>
-      <button onClick={() => setType('relaxation')}>Relaxation</button>
-      {loading ? <Spinner animation="border" /> : <h1>{activity}</h1>}
+    <div class="relax">
+      <h1 clasname="title"> Find Out How To Relax </h1>
+      <div className="buttons">
+        <Button
+          className="buttons"
+          onClick={() => setType('education')}
+          variant="outline-dark"
+        >
+          Education
+        </Button>
+        <Button
+          className="buttons"
+          onClick={() => setType('music')}
+          variant="outline-dark"
+        >
+          Music
+        </Button>
+        <Button
+          className="buttons"
+          onClick={() => setType('relaxation')}
+          variant="outline-dark"
+        >
+          Relaxation
+        </Button>
+      </div>
+      {loading ? (
+        <Spinner className="spinner" animation="grow" variant="dark" />
+      ) : (
+        <h4 className="response">{activity}</h4>
+      )}
     </div>
   );
 }
