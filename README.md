@@ -18,7 +18,7 @@
 
 # Getting Started 
 
-[Click to view page](bored-react.netlify.app)
+[Click to view page](https://bored-react.netlify.app/)
 
 * User lands on the page, and a spinner will display as the data is being fetched.
 * Users can select from three different types of activities and a suggestion will render.
